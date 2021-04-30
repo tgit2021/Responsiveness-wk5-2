@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+.{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.error-text, 
+.error-icon {
+    display: none;
+}
+html{
+    font-size: 16px;
+    font-family: 'poppins', sans-serif;
+}
+#intro {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(bg-intro-mobile.png);
+    background-color: hsl(0, 100%, 74%);
+    padding: 100px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 30px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.left-col{
+    flex: 1;
+    margin-bottom: 50px;
+}
+.left-col h1{
+    color:white;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-bottom: 15px;
+}
+.left-col p{
+    color:white;
+    font-size: 1.1rem;
+    line-height: 1.9rem;
+}
+.right-col{
+    flex: 1;
+}
+.right-col .top-box{
+    background-color: hsl(248, 32%, 49%);
+    color: white;
+    padding: 15px 90px;
+    border-radius: 15px;
+    box-shadow: 0 7px hsl(249, 10%, 26%);
+    margin-bottom: 30px;
+
+}
+.right-col .top-box p {
+    font-size: 1.0rem;
+    line-height: 1.2rem;
+}
+.right-col .top-box p span{
+    font-weight: 700;
+}
+.right-col .form-container{
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 7px hsl(249, 10%, 26%, 0.404);
+}
+.field-group{
+    position: relative;
+    margin-bottom: 25px;
+}
+.right-col label{
+    display:none;
+}
+.right-col input,
+.right-col button[type = submit]{
+    width: 100%;
+    height: 60px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    border: 1.3px
+     solid hsl(246, 25%, 77%);
+    padding-left: 20px;
+    outline: none;
+    color:hsl(249, 10%, 26%);
+    font-family: 'poppins';
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+right-col input:focus {
+    border: 1.5px solid  hsl(249, 10%, 26%);
+}
+.right-col input::placeholder{
+    color: hsl(249, 10%, 26%);
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: 'poppins';
+}
+.right-col button[type = submit] {
+    border:none;
+    background-color: hsl(154, 59%, 51%);
+    box-shadow: 0px 4px  hsl(154, 59%, 44%);
+    color: white;
+    font-weight: 500;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+}
+.right-col button[type = submit]:hover {
+    background-color: hsl(154, 805%, 63%);
+}
+.right-col .form-footer{
+    margin-top: 10px;
+    color: hsl(246, 25%, 77%) }
+.right-col .form-footer span {
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+
+}
+@media only screen and (min-width: 1440Px) {
+    #intro
+        background-image: url(bg-intro-desktop.png);
+}
+.container {
+    flex-direction: row;
+}
+.left-col{
+    text-align: left;
+    padding-right: 50px;
+}
+.left-col h1{
+    font-size: 3rem;
+    list-style: 3.5rem;
+}
+.left-col p{
+    font-size: 1.1rem;
+}
+.right-col{
+    max-width: 500px;
+}
+.right-col .top-box p{
+    font-size: 1.1.rem;
+}
+.right-col .top-box{
+    padding: 20px;
+}
+.right-col .form-container{
+    padding: 40px;
+}
+.right-col input,
+.right-col input::placeholder {
+    font-size: 1.05rem;
+}
+.right-col .form-footer{
+    margin-top: 20px;
+    font-size: .7rem;
+}
